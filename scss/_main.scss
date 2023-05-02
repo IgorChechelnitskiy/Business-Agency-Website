@@ -19,6 +19,22 @@ h1, h2, h3, h4 {
   color: #282C4B;
 }
 
+input, textarea {
+  background: #FFF8F8;
+  font-size: 15px;
+  line-height: 28px;
+  color: #747582;
+  border: none;
+  outline: none;
+  padding: 15px 0 15px 30px;
+  width: 100%;
+}
+
+input:hover,
+textarea:hover {
+  box-shadow: 40px 0 70px rgb(123 67 67 / 7%), -40px 100px 70px rgb(122 79 79 / 7%);
+}
+
 .btn-pink {
   width: 210px;
   height: 68px;
@@ -110,6 +126,7 @@ h1, h2, h3, h4 {
 
       &-subtitle {
         display: flex;
+        justify-content: center;
       }
 
       &-subtitle h4 {
@@ -127,8 +144,8 @@ h1, h2, h3, h4 {
 
       &-string {
         position: absolute;
-        top: 30%;
-        left: 30%;
+        top: 32%;
+        left: 29%
       }
 
       &-desc {
@@ -207,7 +224,7 @@ h1, h2, h3, h4 {
       position: absolute;
       display: none;
       top: 0;
-      left: 0;
+      left: 10%;
     }
 
     .logo-link:hover > .logo-hover {
@@ -220,7 +237,7 @@ h1, h2, h3, h4 {
 
     .slack {
       width: 250px;
-      left: -25px;
+      left: 0;
     }
 
     .microsoft {
@@ -326,6 +343,7 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   margin-top: 50px;
   justify-content: center;
+  margin-bottom: 70px;
 
 
   &-card {
@@ -344,7 +362,81 @@ h1, h2, h3, h4 {
   &-card:not(:last-child) {
     text-align: center;
   }
+
   &-card:hover:not(:last-child) {
     box-shadow: 40px 0 70px rgba(121, 121, 121, 0.05), -40px 100px 70px rgba(121, 121, 121, 0.05);
   }
+}
+
+.testimonial-map {
+  position: relative;
+
+  .testimonial-map-jessica {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 534px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 40px 0 70px rgba(123, 67, 67, 0.07), -40px 100px 70px rgba(122, 79, 79, 0.07);
+
+    .jessica-quotes {
+      width: 40px;
+    }
+
+    .jessica-text {
+      font-size: 18px;
+      line-height: 32px;
+      color: #5D6473;
+    }
+
+    .jessica-profile {
+      display: flex;
+      gap: 18px;
+
+      .jessica-name {
+        font-weight: 700;
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+.contactUs {
+  display: flex;
+  margin-bottom: 80px;
+
+  .contactUs-image {
+    width: 50%;
+  }
+
+  .contactUs-form-emailDate {
+    display: flex;
+    box-sizing: border-box;
+    gap: 25px;
+
+    .date {
+      margin-left: 25px;
+    }
+
+    .contactUs-form-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      color: #14183E;
+      margin: 11px 0;
+    }
+  }
+
+  .message-input {
+    resize: none;
+    height: 116px;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 60px;
+  }
+}
+.footer {
+  background: #282C4B;
 }
