@@ -47,6 +47,7 @@ textarea:hover {
   font-weight: 700;
   font-size: 18px;
   color: #fff;
+  transition: 0.5s;
 }
 
 .btn-white {
@@ -61,6 +62,7 @@ textarea:hover {
   text-align: center;
   border: 1px solid rgba(255, 105, 141, 0.5);
   border-radius: 80px;
+  transition: 0.5s;
 }
 
 .btn-white:hover,
@@ -436,7 +438,64 @@ textarea:hover {
     font-family: "Ubuntu", sans-serif;
     margin-bottom: 60px;
   }
+
+  .contactUs-btn {
+    display: flex;
+
+    .btn-pink {
+      padding: 24px 42px;
+    }
+  }
 }
+
 .footer {
   background: #282C4B;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
+
+  .copyright:before {
+    content: "";
+    text-align: center;
+    display: inline-block;
+    width: 1px;
+    height: 40px;
+    background: #fff;
+    margin-right: 30px;
+    margin-left: -50px;
+  }
+
+  span, a {
+    color: #fff;
+  }
+
+  .policy {
+    display: flex;
+    gap: 30px;
+  }
+
+  .socials {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    a {
+      margin-right: 16px;
+
+      img {
+        transition: 0.5s;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 }
